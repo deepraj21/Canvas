@@ -1,7 +1,7 @@
 .Navbar{
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 1px 3px -2px black;
   font-family: 'poppins';
 }
@@ -12,7 +12,8 @@
 }
 
 .nav-logo img{
-    width: 60px;
+    width: 50px;
+    margin-left: -10px;
 }
 
 .nav-logo p{
@@ -43,7 +44,7 @@
 
 .nav-menu hr{
     border: none;
-    width: 80%;
+    width: 100%;
     height: 3px;
     border-radius: 10px;
     background-color: #FF4141;
