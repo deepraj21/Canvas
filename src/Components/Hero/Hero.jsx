@@ -15,7 +15,7 @@ const Hero = () => {
                 <div className='hero-hand-icon'>
                     
                       <img src='https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fill,g_auto,w_800,h_400/https%3A%2F%2Fstorage.googleapis.com%2Fgen-atmedia%2F2%2F2016%2F09%2Fd0e776ae1dfdc3fbf526020d009e0c15da844b01.gif' alt="" />
-                      <p>canvas,</p>
+                      <p>canvas</p>
                 </div>
                   <p>and you are</p>
                   <p>the masterpiece.</p>

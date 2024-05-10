@@ -95,6 +95,7 @@
 @media(max-width:1280px){
     .Navbar{
         padding: 12px 50px;
+        width: 100%;
     }
     .nav-logo img{
         width: 45px;
@@ -126,6 +127,30 @@
         gap: 25px;
         font-size: 14px;
     }
+
+}
+
+@media(max-width:900px){
+    /* .Navbar{
+        padding: 10px 20px;
+    } */
+    /* .nav-menu{
+        gap: 20px;
+        font-size: 10px;
+    } */
+         .nav-logincart {
+             margin-left: -10px;
+         }
+    .nav-logincart button{
+        width: 100px;
+        height: 40px;
+        font-size: 22px;
+    }
+    /* .nav-cart-count{
+        margin-left: -35px;
+        font-size: 10px;
+    } */
+
 
 }
 
