@@ -54,3 +54,34 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+@media(max-width:500px){
+    .newsletter{
+        width: 100%;
+        padding: 0px 0px;
+        margin-top:150px;
+    }
+
+    .newsletter h1{
+        font-size: 20px;
+    }
+
+    .newsletter p{
+        font-size: 16px;
+    }
+
+    .newsletter div{
+        width: 80%;
+        padding: 0px 10px;
+    }
+
+    .newsletter input{
+        width: 80%;
+    }
+
+    .newsletter div button{
+        width: 120px;
+        height: 50px;
+        font-size: 14px;
+    }
+}

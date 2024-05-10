@@ -30,3 +30,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media(max-width: 768px) {
+    .newcollections p {
+        font-size: 30px;
+    }
+
+    .newcollections hr {
+        width: 100px;
+        height: 5px;
+    }
+}

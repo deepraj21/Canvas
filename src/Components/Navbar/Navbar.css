@@ -164,15 +164,17 @@
     .Navbar{
         width: 8px 0px;
         gap: 0;
+        padding: 8px 0px;
     }
     .nav-logo{
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
     .nav-menu{
         height: 70px;
         top: 50px;
     }
     .nav-logincart{
-        transform: scale(0.6);
+        transform: scale(0.7);
+        
     }
 }

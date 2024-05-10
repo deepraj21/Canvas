@@ -1,10 +1,10 @@
-.hero{
+.hero {
     height: 100vh;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    background: linear-gradient(180deg, #828acf, #828bdb0a 60%);
     display: flex;
 }
 
-.hero-left{
+.hero-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -14,29 +14,31 @@
     line-height: 1.1;
 }
 
-.hero-left p{
+.hero-left p {
     color: #090909;
     font-size: 26px;
     font-weight: 600;
 }
 
-.hero-left-para p{
+.hero-left-para p {
     color: #171717;
-    font-size: 70px;
+    font-size: 80px;
+    padding: 5px;
 }
 
-.hero-hand-icon{
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 20px;
 
 }
 
-.hero-hand-icon img{
-    width: 105px;
+.hero-hand-icon img {
+    width: 250px;
+    border-radius: 60px;
 }
 
-.hero-latest-btn{
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,16 +53,73 @@
     font-weight: 500;
 }
 
-.hero-right{
+.hero-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;   
+    padding: 30px;
 }
 
-.hero-right img{
+.hero-right img {
     width: 800px;
     border-radius: 30px;
-    margin-left: -300px;
+    /* margin-left: -300px; */
+}
+
+@media(max-width:500px) {
+    .hero {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-left {
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .hero-left p {
+        color: #090909;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .hero-left-para p {
+        color: #171717;
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .hero-hand-icon img {
+        width: 180px;
+        border-radius: 60px;
+    }
+
+    .hero-right {
+        /* padding: 30px; */
+        width: 86%;
+        overflow: hidden;
+    }
+
+    .hero-right img {
+        width: 480px;
+        border-radius: 30px;
+
+    }
+
+    .hero-latest-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 220px;
+        height: 50px;
+        border-radius: 75px;
+        margin-top: 30px;
+        background: #ff4141;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
 }

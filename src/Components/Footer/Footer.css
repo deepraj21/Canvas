@@ -66,3 +66,31 @@
     background: #c7c7c7;
     justify-content: center;
 }
+
+@media(max-width: 768px){
+    .footer-logo img {
+        width: 40px;
+    }
+
+    .footer-links{
+        gap: 30px;
+        font-size: 10px;
+    }
+
+    .footer-social-icons{
+        gap: 10px;
+    }
+
+    .footer-icon-container{
+        padding: 5px;
+    }
+
+    .fooer-copyright{
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .fooer-copyright hr{
+        width: 60%;
+    }
+}

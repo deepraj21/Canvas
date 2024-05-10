@@ -1,15 +1,15 @@
-.Offers{
+.Offers {
     width: 65%;
     height: 60vh;
     display: flex;
     margin: auto;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background: linear-gradient(180deg, #fde1ff 0%,#e1ffea22 60%);
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
     margin-top: 450px;
 }
 
-.offers-left{
+.offers-left {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 
 }
 
-.offers-left p{
+.offers-left p {
     color: #171717;
     font-size: 22px;
     font-weight: 600;
@@ -30,12 +30,12 @@
     font-weight: 600;
 }
 
-.offers-left button{
+.offers-left button {
     width: 282px;
     height: 70px;
     border-radius: 35px;
     background-color: #ff4141;
-    border:none;
+    border: none;
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -43,14 +43,85 @@
     cursor: pointer;
 }
 
-.offers-right{
+.offers-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top:50px;
+    padding-top: 50px;
 }
 
-.offers-right img{
+.offers-right img {
     width: 700px;
+}
+
+@media(max-width:500px) {
+    .Offers {
+        flex-direction: column;
+        width: 100%;
+        
+
+    }
+
+    .Offers {
+        width: 65%;
+        height: 60vh;
+        display: flex;
+        margin: auto;
+        padding: 0px 72px;
+        margin-bottom: -180px;
+        background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+        margin-top: 580px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offers-right img {
+        display: none;
+    }
+        .offers-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 30px;
+    
+        }
+
+    .offers-left h1 {
+        color: #454545;
+        font-size: 27px;
+        font-weight: 600;
+        /* margin-top: 20px; */
+    }
+
+    .offers-left p {
+        color: #171717;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 50px;
+    }
+
+    .offers-left button {
+        width: 250px;
+        height: 70px;
+        border-radius: 35px;
+        background-color: #ff4141;
+        border: none;
+        color: white;
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 30px;
+        cursor: pointer;
+
+    }
+
+    .offers-left {
+        /* flex: 1;
+        display: flex; */
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
 }

@@ -43,7 +43,7 @@ const products = [
     {
         id:1,
         name: "canvas 1",
-        category : "type1",
+        category : "Cotton",
         image: pic_2,
         new_price: "50.0",
         old_price: "80.6",
@@ -51,7 +51,7 @@ const products = [
     {
         id:2,
         name: "canvas 2",
-        category : "type2",
+        category : "Linen",
         image: pic_3,
         new_price: "60.0",
         old_price: "90.6",
@@ -59,7 +59,7 @@ const products = [
     {
         id:3,
         name: "canvas 3",
-        category : "type3",
+        category : "Stretched",
          image: pic_4,
         new_price: "70.0",
         old_price: "100.6",
@@ -67,7 +67,7 @@ const products = [
     {
         id:4,
         name: "canvas 4",
-        category : "type1",
+        category : "Cotton",
         image: pic_5,
         new_price: "80.0",
         old_price: "110.6",
@@ -75,7 +75,7 @@ const products = [
     {
         id:5,
         name: "canvas 5",
-        category : "type2",
+        category : "Linen",
          image: pic_6,
         new_price: "90.0",
         old_price: "120.6",
@@ -83,7 +83,7 @@ const products = [
     {
         id:6,
         name: "canvas 6",
-        category : "type3",
+        category : "Stretched",
          image: pic_7,
         new_price: "100.0",
         old_price: "130.6",
@@ -91,7 +91,7 @@ const products = [
     {
         id:7,
         name: "canvas 7",
-        category : "type1",
+        category : "Cotton",
          image: pic_8,
         new_price: "110.0",
         old_price: "140.6",
@@ -99,7 +99,7 @@ const products = [
     {
         id:8,
         name: "canvas 8",
-        category : "type2",
+        category : "Linen",
          image: pic_9,
         new_price: "120.0",
         old_price: "150.6",
@@ -107,7 +107,7 @@ const products = [
     {
         id:9,
         name: "canvas 9",
-        category : "type3",
+        category : "Stretched",
          image: pic_10,
         new_price: "130.0",
         old_price: "160.6",
@@ -115,7 +115,7 @@ const products = [
     {
         id:10,
         name: "canvas 10",
-        category : "type1",
+        category : "Cotton",
         image: pic_11,
         new_price: "140.0",
         old_price: "170.6",
@@ -123,7 +123,7 @@ const products = [
     {
         id:11,
         name: "canvas 11",
-        category : "type2",
+        category : "Linen",
         image: pic_12,
         new_price: "150.0",
         old_price: "180.6",
@@ -131,7 +131,7 @@ const products = [
     {
         id:12,
         name: "canvas 12",
-        category : "type3",
+        category : "Stretched",
         image: pic_13,
         new_price: "160.0",
         old_price: "190.6",
@@ -139,7 +139,7 @@ const products = [
     {
         id:13,
         name: "canvas 13",
-        category : "type1",
+        category : "Cotton",
         image: pic_14,
         new_price: "160.0",
         old_price: "190.6",
@@ -147,7 +147,7 @@ const products = [
     {
         id:14,
         name: "canvas 14",
-        category : "type2",
+        category : "Linen",
          image: pic_15,
         new_price: "160.0",
         old_price: "190.6",
@@ -155,7 +155,7 @@ const products = [
     {
         id:15,
         name: "canvas 15",
-        category : "type3",
+        category : "Stretched",
          image: pic_16,
         new_price: "160.0",
         old_price: "190.6",
@@ -163,7 +163,7 @@ const products = [
     {
         id:16,
         name: "canvas 16",
-        category : "type1",
+        category : "Cotton",
          image: pic_17,
         new_price: "160.0",
         old_price: "190.6",
@@ -171,7 +171,7 @@ const products = [
     {
         id:17,
         name: "canvas 17",
-        category : "type2",
+        category : "Linen",
          image: pic_40,
         new_price: "160.0",
         old_price: "190.6",
@@ -179,7 +179,7 @@ const products = [
     {
         id:18,
         name: "canvas 18",
-        category : "type3",
+        category : "Stretched",
          image: pic_19,
         new_price: "160.0",
         old_price: "190.6",
@@ -187,7 +187,7 @@ const products = [
     {
         id:19,
         name: "canvas 19",
-        category : "type1",
+        category : "Cotton",
          image: pic_20,
         new_price: "160.0",
         old_price: "190.6",
@@ -195,7 +195,7 @@ const products = [
     {
         id:20,
         name: "canvas 20",
-        category : "type2",
+        category : "Linen",
          image: pic_21,
         new_price: "160.0",
         old_price: "190.6",
@@ -203,7 +203,7 @@ const products = [
     {
         id:21,
         name: "canvas 21",
-        category : "type3",
+        category : "Stretched",
          image: pic_22,
         new_price: "160.0",
         old_price: "190.6",
@@ -211,7 +211,7 @@ const products = [
     {
         id:22,
         name: "canvas 22",
-        category : "type1",
+        category : "Cotton",
         image: pic_23,
         new_price: "160.0",
         old_price: "190.6",
@@ -219,7 +219,7 @@ const products = [
     {
         id:23,
         name: "canvas 23",
-        category : "type2",
+        category : "Linen",
          image: pic_24,
         new_price: "160.0",
         old_price: "190.6",
@@ -227,7 +227,7 @@ const products = [
     {
         id:24,
         name: "canvas 24",
-        category : "type3",
+        category : "Stretched",
          image: pic_25,
         new_price: "160.0",
         old_price: "190.6",
@@ -235,7 +235,7 @@ const products = [
     {
         id:25,
         name: "canvas 25",
-        category : "type1",
+        category : "Cotton",
          image: pic_26,
         new_price: "160.0",
         old_price: "190.6",
@@ -243,7 +243,7 @@ const products = [
     {
         id:26,
         name: "canvas 26",
-        category : "type2",
+        category : "Linen",
          image: pic_27,
         new_price: "160.0",
         old_price: "190.6",
@@ -251,7 +251,7 @@ const products = [
     {
         id:27,
         name: "canvas 27",
-        category : "type3",
+        category : "Stretched",
          image: pic_28,
         new_price: "160.0",
         old_price: "190.6",
@@ -259,7 +259,7 @@ const products = [
     {
         id:28,
         name: "canvas 28",
-        category : "type1",
+        category : "Cotton",
          image: pic_29,
         new_price: "160.0",
         old_price: "190.6",
@@ -267,7 +267,7 @@ const products = [
     {
         id:29,
         name: "canvas 29",
-        category : "type2",
+        category : "Linen",
          image: pic_30,
         new_price: "160.0",
         old_price: "190.6",
@@ -275,7 +275,7 @@ const products = [
     {
         id:30,
         name: "canvas 30",
-        category : "type3",
+        category : "Stretched",
          image: pic_31,
         new_price: "160.0",
         old_price: "190.6",
@@ -283,7 +283,7 @@ const products = [
     {
         id:31,
         name: "canvas 31",
-        category : "type1",
+        category : "Cotton",
          image: pic_32,
         new_price: "160.0",
         old_price: "190.6",
@@ -291,7 +291,7 @@ const products = [
     {
         id:32,
         name: "canvas 32",
-        category : "type2",
+        category : "Linen",
         image: pic_33,
         new_price: "160.0",
         old_price: "190.6",
@@ -299,7 +299,7 @@ const products = [
     {
         id:33,
         name: "canvas 33",
-        category : "type3",
+        category : "Stretched",
          image: pic_34,
         new_price: "160.0",
         old_price: "190.6",
@@ -307,7 +307,7 @@ const products = [
     {
         id:34,
         name: "canvas 34",
-        category : "type1",
+        category : "Cotton",
          image: pic_35,
         new_price: "160.0",
         old_price: "190.6",
@@ -315,7 +315,7 @@ const products = [
     {
         id:35,
         name: "canvas 35",
-        category : "type2",
+        category : "Linen",
          image: pic_36,
         new_price: "160.0",
         old_price: "190.6",
@@ -323,7 +323,7 @@ const products = [
     {
         id:36,
         name: "canvas 36",
-        category : "type3",
+        category : "Stretched",
          image: pic_37,
         new_price: "160.0",
         old_price: "190.6",
@@ -331,7 +331,7 @@ const products = [
     {
         id:37,
         name: "canvas 37",
-        category : "type1",
+        category : "Cotton",
          image: pic_38,
         new_price: "160.0",
         old_price: "190.6",
@@ -339,7 +339,7 @@ const products = [
     {
         id:38,
         name: "canvas 38",
-        category : "type2",
+        category : "Linen",
          image: pic_39,
         new_price: "160.0",
         old_price: "190.6",

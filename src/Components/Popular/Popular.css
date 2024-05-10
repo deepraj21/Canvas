@@ -30,3 +30,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+@media(max-width: 768px){
+    .popular p{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 100px;
+        height: 5px;
+    }
+}
