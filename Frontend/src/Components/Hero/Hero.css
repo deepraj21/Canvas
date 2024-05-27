@@ -95,18 +95,18 @@
     }
 }
 
-@media(max-width:900px) {
+@media(max-width:850px) {
     .hero-right {
-            /* padding: 30px; */
-            width: 80%;
-            overflow: hidden;
-        }
-    
-        .hero-right img {
-            width: 480px;
-            border-radius: 30px;
-    
-        }
+        /* padding: 30px; */
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .hero-right img {
+        width: 480px;
+        border-radius: 30px;
+
+    }
 
 
 }
@@ -139,6 +139,21 @@
     }
 }
 
+@media(max-width:400px) {
+    .hero-right {
+        /* padding: 30px; */
+        width: 82%;
+        /* overflow: hidden; */
+    }
+
+    .hero-right img {
+        width: 430px;
+        border-radius: 30px;
+
+    }
+
+}
+
 @media(max-width:500px) {
     .hero {
         flex-direction: column;
@@ -169,7 +184,7 @@
 
     .hero-right {
         /* padding: 30px; */
-        width: 85.5%;
+        width: 84%;
         overflow: hidden;
     }
 
