@@ -211,6 +211,62 @@ app.get('/newcollection',async (req,res)=>{
     res.send(newcollection);
 })
 
+// creating endpoint for popular collection
+app.get('/popularitems',async (req,res)=>{
+    let products = await Product.find({});
+    let popularitems = products.slice(0,4);
+    res.send(popularitems);
+})
+
+// creating middleware to fetch user
+
+const fetchUser = async(req,res,next)=>{
+    const token = req.header('auth-token');
+    if(!token){
+        res.status(401).send({errors:"please authenticate using a valid token"});
+    }
+    else{
+        try {
+            const verify = jwt.verify(token,'secret_canvas');
+            req.user = verify.user;
+            next();
+        } catch (error) {
+            res.status(401).send({errors:"Invalid token"});
+        }
+    
+    }
+}
+
+// creating endpoint for adding product to cart
+
+app.post('/addtocart',fetchUser, async (req,res)=>{
+    let userData = await Users.findOne({_id:req.user.id});
+    let cart = userData.cartData;
+    cart[req.body.itemId] = cart[req.body.itemId] + 1;
+    await Users.findOneAndUpdate({_id:req.user.id},{cartData:cart});
+    res.send("added to cart");
+})
+
+// creating endpoint for removing product from cart
+
+app.post('/removefromcart',fetchUser,async (req,res)=>{
+    let userData = await Users.findOne({ _id: req.user.id });
+    let cart = userData.cartData;
+    if (cart[req.body.itemId]>0){
+         cart[req.body.itemId] = cart[req.body.itemId] - 1;
+    }
+    await Users.findOneAndUpdate({ _id: req.user.id }, { cartData: cart });
+    res.send("removed from cart");
+})
+
+// creating endpoint for get cart data
+
+app.post('/getcart',fetchUser,async (req,res)=>{
+    let userData = await Users.findOne({ _id: req.user.id });
+    res.json(userData.cartData);
+})
+
+
 app.listen(port,(error)=>{  
     if(error){
         console.log("Error in running the server");
