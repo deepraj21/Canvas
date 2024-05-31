@@ -18,9 +18,9 @@ const ShopContextProvider = (props) =>{
     const [products,setAll_Product] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/allProducts').then((response) => response.json()).then((data) => setAll_Product(data))
+        fetch('https://canvas-backend-vgcc.onrender.com/allProducts').then((response) => response.json()).then((data) => setAll_Product(data))
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/getcart',{
+            fetch('https://canvas-backend-vgcc.onrender.com/getcart',{
                 method:'POST',
                 headers:{
                     'Accept':'application/form-data',
@@ -39,7 +39,7 @@ const ShopContextProvider = (props) =>{
     const addToCart = (itemId) => {
         setCartItem((prev)=>({...prev,[itemId]:prev[itemId]+1}))
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/addtocart',{
+            fetch('https://canvas-backend-vgcc.onrender.com/addtocart',{
                 method:'POST',
                 headers:{
                     'Accept':'application/form-data',
@@ -56,7 +56,7 @@ const ShopContextProvider = (props) =>{
     const removeFromCart = (itemId) => {
         setCartItem((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
         if(localStorage.getItem('auth-token')){
-            fetch('http://localhost:4000/removefromcart',{
+            fetch('https://canvas-backend-vgcc.onrender.com/removefromcart',{
                 method:'POST',
                 headers:{
                     'Accept':'application/form-data',

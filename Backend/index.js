@@ -7,13 +7,16 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 const { error } = require("console");
+require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
 
 // database connection with mongodb
 
-mongoose.connect("mongodb+srv://deepraj21bera:KB6tvjYDWc7DJdJe@cluster0.tfauzjh.mongodb.net/canvas");
+const mongoURI = process.env.MONGODB_URI;
+
+mongoose.connect(mongoURI);
 
 // API Creation
 

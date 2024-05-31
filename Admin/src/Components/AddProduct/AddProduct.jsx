@@ -28,7 +28,7 @@ const AddProduct = () => {
     let formData = new FormData();
     formData.append('product',image);
 
-    await fetch('http://localhost:4000/upload',{
+    await fetch('https://canvas-backend-vgcc.onrender.com/upload',{
       method:'POST',
       headers:{
         Accept:'application/json',
@@ -38,7 +38,7 @@ const AddProduct = () => {
 
     if(responseData.success){
       product.image = responseData.image_url;
-      await fetch('http://localhost:4000/addProduct',{
+      await fetch('https://canvas-backend-vgcc.onrender.com/addProduct',{
         method:'POST',
         headers:{
           Accept:'application/json',

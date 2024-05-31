@@ -6,7 +6,7 @@ const Popular = () => {
   const [polpularProduct, setPopularProduct] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/popularitems').then((res) => res.json()).then((data) => setPopularProduct(data));
+    fetch('https://canvas-backend-vgcc.onrender.com/popularitems').then((res) => res.json()).then((data) => setPopularProduct(data));
   }, []);
   return (
     <div className='popular'>

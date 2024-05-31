@@ -7,7 +7,7 @@ const NewCollections = () => {
   const [new_collection, setNewCollection] = useState([]);
   useEffect(() => {
     console.log(new_collection)
-    fetch('http://localhost:4000/newcollection').then((response) => response.json()).then((data) => setNewCollection(data));
+    fetch('https://canvas-backend-vgcc.onrender.com/newcollection').then((response) => response.json()).then((data) => setNewCollection(data));
   }, [])
   return (
     <div className='newcollections'>

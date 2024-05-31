@@ -7,7 +7,7 @@ const ListProduct = () => {
   const [allProducts,setAllProducts] = useState([]);
   
   const fetchInfo = async () => {
-    await fetch('http://localhost:4000/allProducts').then((res)=>res.json()).then((data)=>{setAllProducts(data)});
+    await fetch('https://canvas-backend-vgcc.onrender.com/allProducts').then((res)=>res.json()).then((data)=>{setAllProducts(data)});
   } 
 
   useEffect(()=>{
@@ -15,7 +15,7 @@ const ListProduct = () => {
   })
 
   const removeProduct = async (id)=>{
-    await fetch('http://localhost:4000/deleteProduct',{
+    await fetch('https://canvas-backend-vgcc.onrender.com/deleteProduct',{
       method:'POST',
       headers:{
         Accept:'application/json',
