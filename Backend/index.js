@@ -7,10 +7,32 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 const { error } = require("console");
+const cloudinary = require('cloudinary').v2;
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
 require('dotenv').config();
 
 app.use(express.json());
 app.use(cors());
+
+// Configure Cloudinary with credentials from .env
+cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+
+// Set up Cloudinary storage for multer
+const storage = new CloudinaryStorage({
+    cloudinary: cloudinary,
+    params: {
+        folder: 'canvas-images', // Folder name in Cloudinary where images will be stored
+        allowedFormats: ['jpg', 'jpeg', 'png'],
+        public_id: (req, file) => file.fieldname + '_' + Date.now(), // Customize the filename
+    },
+});
+
+// Initialize multer with Cloudinary storage
+const upload = multer({ storage });
 
 // database connection with mongodb
 
@@ -24,27 +46,14 @@ app.get("/",(req,res)=>{
     res.send("Express Backend");
 });
 
-// Image storage engine
 
-const Storage = multer.diskStorage({
-    destination:"./uploads/images",
-    filename:(req,file,cb)=>{
-        return cb(null,`${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`);
-    }
-});
-
-const upload = multer({storage:Storage});
-
-// creating upload endpoint for images
-
-app.use('/images',express.static('uploads/images'));
-
-app.post("/upload",upload.single('product'),(req,res)=>{
+// Creating upload endpoint for images
+app.post('/upload', upload.single('product'), (req, res) => {
     res.json({
-        success : 1,
-        image_url: `https://canvas-backend-vgcc.onrender.com/images/${req.file.filename}`
-    })
-})
+        success: 1,
+        image_url: req.file.path, 
+    });
+});
 
 // User Schema
 
